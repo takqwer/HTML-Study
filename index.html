@@ -36,7 +36,7 @@
 
     <div class="member_container">
       <div class="member_header">
-        <div class="green-text member-text center_text">MEMBER</div>
+        <div class="green-text member-text">MEMBER</div>
       </div>
       <div class="memberphoto_container">
         <div class="member_item">
@@ -100,7 +100,57 @@
           <div class="white-text member-text">member10</div>
         </div>
       </div>
-      <div class="gametitle_container"></div>
+    </div>
+    <div class="gametitle_container">
+      <div class="gametitle_header">
+        <div class="green-text member-text">GAME TITLE</div>
+      </div>
+      <div class="gamephoto_container">
+        <div class="game_item">
+          <div class="face_photo">
+            <img src="/img/game/game_01.jpeg" />
+          </div>
+          <div class="black-text member-text">game1</div>
+        </div>
+        <div class="game_item">
+          <div class="face_photo">
+            <img src="/img/game/game_02.jpeg" />
+          </div>
+          <div class="black-text member-text">game2</div>
+        </div>
+        <div class="game_item">
+          <div class="face_photo">
+            <img src="/img/game/game_03.jpeg" />
+          </div>
+          <div class="black-text member-text">game3</div>
+        </div>
+        <div class="game_item">
+          <div class="face_photo">
+            <img src="/img/game/game_04.jpeg" />
+          </div>
+          <div class="black-text member-text">game4</div>
+        </div>
+      </div>
+    </div>
+    <div class="contact_container">
+      <div class="contact_header">
+        <div class="green-text big-text">CONTACT</div>
+      </div>
+      <form action="confirm.php" method="post">
+        <div class="black-text">名前</div>
+        <input id="name" type="text" name="yourname" />
+        <div class="black-text">性別</div>
+        <select name="性別">
+          <option value="none">無回答</option>
+          <option value="male">男性</option>
+          <option value="female">女性</option>
+        </select>
+        <div class="black-text">E-Mail</div>
+        <input id="E-Mail" type="text" />
+        <div class="black-text">お問い合わせ内容</div>
+        <textarea id="comment" name="comment" rows="2" cols="100"></textarea>
+        <input type="submit" value="送信" />
+      </form>
     </div>
   </body>
 </html>
